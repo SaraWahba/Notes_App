@@ -41,6 +41,9 @@ final NoteModel note ;
                 ),
               ),
               trailing: IconButton(
+                  onPressed: () {
+                    note.delete();
+                  },
                   icon: const Padding(
                     padding: EdgeInsets.only(left: 11),
                     child: Icon(
@@ -49,7 +52,7 @@ final NoteModel note ;
                       size: 24,
                     ),
                   ),
-                  onPressed: () {}),
+                  ),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24),
